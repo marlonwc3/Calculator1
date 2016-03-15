@@ -1,0 +1,152 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:showIn="@layout/activity_main">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/output_text"
+        android:text="Your result goes here."
+        android:textStyle="bold"
+        android:textColor="#1d1d1d"
+        android:textColorHighlight="#000000"
+        android:background="@drawable/back"
+        android:textIsSelectable="false"
+        android:gravity="center"
+        android:textSize="20dp"
+        android:layout_alignRight="@+id/gridLayoutInput"
+        android:layout_alignEnd="@+id/gridLayoutInput"
+        android:layout_above="@+id/gridLayoutInput"
+        android:layout_alignParentTop="true"
+        android:layout_alignLeft="@+id/gridLayoutInput"
+        android:layout_alignStart="@+id/gridLayoutInput" />
+
+    <GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:columnCount="4"
+        android:orientation="horizontal"
+        android:id="@+id/gridLayoutInput"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true">
+
+        <Button android:text="1"
+            android:layout_row="1"
+            android:layout_column="0"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="2"
+            android:layout_row="1"
+            android:layout_column="1"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="3"
+            android:layout_row="1"
+            android:layout_column="2"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="*"
+            android:layout_row="1"
+            android:layout_column="3"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="4"
+            android:layout_row="2"
+            android:layout_column="0"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="5"
+            android:layout_row="2"
+            android:layout_column="1"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="6"
+            android:layout_row="2"
+            android:layout_column="2"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="-"
+            android:layout_row="2"
+            android:layout_column="3"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="7"
+            android:layout_row="3"
+            android:layout_column="0"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="8"
+            android:layout_row="3"
+            android:layout_column="1"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button android:text="9"
+            android:layout_row="3"
+            android:layout_column="2"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button
+            android:layout_column="3"
+            android:text="/"
+            android:layout_row="3"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button
+            android:layout_columnSpan="2"
+            android:layout_gravity="fill"
+            android:text="0"
+            android:layout_row="4"
+            android:layout_column="0"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button
+            android:layout_columnSpan="4"
+            android:layout_gravity="fill"
+            android:text="="
+            android:layout_row="5"
+            android:layout_column="0"
+            android:layout_height="82dp"
+            android:layout_width="wrap_content"
+            android:id="@+id/button2"
+            android:onClick="setInput" />
+
+        <Button android:text="C"
+            android:layout_row="4"
+            android:layout_column="2"
+            android:layout_height="82dp"
+            android:onClick="setInput" />
+
+        <Button
+            android:text="-"
+            android:layout_row="4"
+            android:layout_column="3"
+            android:layout_width="wrap_content"
+            android:layout_height="82dp"
+            android:id="@+id/button"
+            android:onClick="setInput" />
+
+    </GridLayout>
+
+
+
+</RelativeLayout>
